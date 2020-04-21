@@ -3,7 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        
+        shanoCode(new float[] {(float) 0.5, (float) 0.25, (float) 0.125, (float) 0.0625, (float) 0.03125, (float) 0.15625, (float) 0.0078125, (float) 0.0078125}, 8, new String[] {"x1", "x2", "x3", "x4", "x5", "x6", "x7", "x8"});
     }
 
     // array - массив вероятностей, length - размер алфавита источника , codes - массив в который записываем кодировку каждого символа.
@@ -46,6 +46,9 @@ public class Main {
             }
             shanoCode(part1, part1.length, codes); // n-ая строчка
             shanoCode(part2, part2.length, codes);
+            System.out.println(part1.toString());
+            System.out.println(part2.toString());
+            System.out.println(codes.toString());
             return;// k-ая строка
         }
     }
